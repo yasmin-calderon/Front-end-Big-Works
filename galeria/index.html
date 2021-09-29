@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/spacing.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="flex-row">
+  <aside class="menu-lateral flex-column">
+    <button class="menu-lateral__button menu-lateral__button--open">
+      <img src="assets/closed-menu.svg" alt="Menu fechado">
+    </button>
+    <button class="menu-lateral__button flex-row align-center">
+      <img src="assets/active-home.svg" alt="Home">
+      <span class="menu-lateral__button__span span--branco hidden">Início</span>
+    </button>
+    <button class="menu-lateral__button flex-row align-center">
+      <img src="assets/inactive-like.svg" alt="Favoritos">
+      <span class="menu-lateral__button__span span--cinza hidden">Favoritos</span>
+    </button>
+    <button class="menu-lateral__button mt-auto flex-row align-center">
+      <img src="assets/inactive-settings.svg" alt="Configurações">
+      <span class="menu-lateral__button__span span--cinza hidden">Configurações</span>
+    </button>
+  </aside>
+
+  <main class="main">
+    <h1 class="main__title">Início</h1>
+    <div class="galeria flex-row flex-wrap justify-center">
+      <div class="item">
+        <img class="item__img" src="assets/gallery/image 1.png" alt="Hamster" data-index="1">
+        <img class="item__like hidden" src="assets/like.svg" alt="like">
+        <div class="item__letter flex-row justify-between">
+          <span>Lorem ipsum</span>
+          <span class="item__letter--cinza">há 1 mês</span>
+        </div>
+      </div>
+      <div class="item">
+        <img class="item__img" src="assets/gallery/image 2.png" alt="Gato" data-index="2">
+        <img class="item__like hidden" src="assets/like.svg" alt="like">
+        <div class="item__letter flex-row justify-between">
+          <span>Lorem ipsum</span>
+          <span class="item__letter--cinza">há 1 mês</span>
+        </div>
+      </div>
+      <div class="item">
+        <img class="item__img" src="assets/gallery/image 3.png" alt="Lobo" data-index="3">
+        <img class="item__like hidden" src="assets/like.svg" alt="like">
+        <div class="item__letter flex-row justify-between">
+          <span>Lorem ipsum</span>
+          <span class="item__letter--cinza">há 1 mês</span>
+        </div>
+      </div>
+      <div class="item">
+        <img class="item__img" src="assets/gallery/image 4.png" alt="Macaco" data-index="4">
+        <img class="item__like hidden" src="assets/like.svg" alt="like">
+        <div class="item__letter flex-row justify-between">
+          <span>Lorem ipsum</span>
+          <span class="item__letter--cinza">há 1 mês</span>
+        </div>
+      </div>
+      <div class="item">
+        <img class="item__img" src="assets/gallery/image 5.png" alt="Borboleta" data-index="5">
+        <img class="item__like hidden" src="assets/like.svg" alt="like">
+        <div class="item__letter flex-row justify-between">
+          <span>Lorem ipsum</span>
+          <span class="item__letter--cinza">há 1 mês</span>
+        </div>
+      </div>
+      <div class="item">
+        <img class="item__img" src="assets/gallery/image 6.png" alt="Leopardo" data-index="6">
+        <img class="item__like hidden" src="assets/like.svg" alt="like">
+        <div class="item__letter flex-row justify-between">
+          <span>Lorem ipsum</span>
+          <span class="item__letter--cinza">há 1 mês</span>
+        </div>
+      </div>
+      <div class="item">
+        <img class="item__img" src="assets/gallery/image 7.png" alt="Raposa laranja" data-index="7">
+        <img class="item__like hidden" src="assets/like.svg" alt="like">
+        <div class="item__letter flex-row justify-between">
+          <span>Lorem ipsum</span>
+          <span class="item__letter--cinza">há 1 mês</span>
+        </div>
+      </div>
+      <div class="item">
+        <img class="item__img" src="assets/gallery/image 8.png" alt="Raposa branca" data-index="8">
+        <img class="item__like hidden" src="assets/like.svg" alt="like">
+        <div class="item__letter flex-row justify-between">
+          <span>Lorem ipsum</span>
+          <span class="item__letter--cinza">há 1 mês</span>
+        </div>
+      </div>
+      <div class="item">
+        <img class="item__img" src="assets/gallery/image 9.png" alt="Tartaruga" data-index="9">
+        <img class="item__like hidden" src="assets/like.svg" alt="like">
+        <div class="item__letter flex-row justify-between">
+          <span>Lorem ipsum</span>
+          <span class="item__letter--cinza">há 1 mês</span>
+        </div>
+      </div>
+      <div class="item">
+        <img class="item__img" src="assets/gallery/image 10.png" alt="Leão" data-index="10">
+        <img class="item__like hidden" src="assets/like.svg" alt="like">
+        <div class="item__letter flex-row justify-between">
+          <span>Lorem ipsum</span>
+          <span class="item__letter--cinza">há 1 mês</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal hidden flex-row justify-center align-center">
+    <button class="modal__fechar">
+      <img src="assets/close-modal.svg" alt="Fechar modal">
+    </button>
+    <div class="flex-row align-center">
+      <button class="modal__voltar">
+        <img src="assets/prev.svg" alt="voltar">
+      </button>
+      <div class="modal__imagens">
+        <img class="modal__imagem" src="assets/gallery/image 10.png">
+        <img class="modal__like hidden" src="assets/like.svg" alt="like">
+      </div>
+      <button class="modal__proximo">
+        <img src="assets/next.svg" alt="próxima">
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>
